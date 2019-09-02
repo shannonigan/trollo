@@ -1,5 +1,6 @@
 class Board < ApplicationRecord
   belongs_to :user
+  has_many :lists
 
   def self.all_boards(user_id)
     Board.find_by_sql(

@@ -1,4 +1,3 @@
-Board.destroy_all
 
 User.create(
   email: "test@test.com",
@@ -14,4 +13,12 @@ User.create(
     )
   end
 
+  # 4.times do
+  #   List.create(
+  #     name: Faker::Construction.role
+  #     priority: Faker::Color.color_name
+  #     board_id: b
+  #     user_id: 1
+  #   )
+  # end
   puts "1 User with 10 customers seeded"

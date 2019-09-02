@@ -1,0 +1,10 @@
+<h1> Lists </h1>
+
+<% @lists.each do |list| %>
+  <div>
+    <h3><%= link_to list.name, [@board, list] %></h3>
+  </div>
+<% end %>
+
+<%= link_to 'Back', board_path(@board), class: "ui blue button" %>
+
