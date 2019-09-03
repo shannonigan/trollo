@@ -1,0 +1,13 @@
+<h1>Tasks:</h1>
+<br/>
+<% @tasks.each do |task| %>
+  <div>
+    <h3><%= link_to task.name, [@list, task] %></h3>
+  </div>
+<% end %>
+<br/>
+<br/>
+<%= link_to 'Add Task', new_list_task_path(@list), class: "ui blue button" %>
+
+<%# link_to 'Back', lists_path, class: "ui purple button" %>
+ <%# trying to figure out how to get the back function to work, have tried a myraid of path combos..%>

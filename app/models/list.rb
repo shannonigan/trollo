@@ -1,5 +1,6 @@
 class List < ApplicationRecord
   belongs_to :board
+  has_many :tasks
 
 
     # def self.all_lists(user_id, board_id)

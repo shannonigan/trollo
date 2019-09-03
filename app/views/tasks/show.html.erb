@@ -1,0 +1,12 @@
+<h1><%= @task.name %></h1>
+<h3><%= @task.priority%></h3>
+<br/>
+
+<br/>
+
+<br/>
+<br/>
+<%= link_to 'Edit Task', edit_list_task_path(@list, @task), class: "ui purple button" %>
+<%= link_to 'Delete Task', list_task_path(@list, @task), method: :delete, class: "ui red button" %>
+<%# link_to 'back', list_path(@list) %>
+ <%# trying to figure out how to get the back function to work, have tried a myraid of path combos..%>
